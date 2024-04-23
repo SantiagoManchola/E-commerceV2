@@ -10,7 +10,7 @@ const CartItem = () => {
                 </div>
                 <div className="overflow-hidden relative">
                     <span className="overflow-ellipsis whitespace-nowrap overflow-hidden text-base mb-2 font-semibold block pr-6">product name</span>
-                    <MdClose className="absolute top-0 right-0 cursor-pointer"/>
+                    <MdClose className="absolute top-[5px] right-0 cursor-pointer"/>
                     <div className="w-fit flex border-solid border-2 border-[#00000033] mr-2 h-10 mb-2">
                         <span className="text-base w-8 flex items-center justify-center cursor-pointer text-[#6b6b6b] border-solid border-r border-1 border-[#00000033] ">-</span>
                         <span className=" text-sm w-10 flex items-center justify-center cursor-pointer text-[#6b6b6b]">5</span>

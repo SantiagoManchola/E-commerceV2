@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Product from "./Product/Product"
 
 const Products = ({ innerPage, headingText }) => {
@@ -14,6 +15,11 @@ const Products = ({ innerPage, headingText }) => {
             </div>
         </div>
     );
+};
+
+Products.propTypes = {
+    innerPage: PropTypes.bool,
+    headingText: PropTypes.string,
 };
 
 export default Products;

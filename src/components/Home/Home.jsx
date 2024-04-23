@@ -1,8 +1,22 @@
+import { useEffect } from "react";
+
 import Category from "../Category/Category";
 import Products from "../Products/Products";
 import Banner from "./Banner/Banner"
+/* import { fetchDataFromApi } from "../../utils/api.js"; */
 
 const Home = () => {
+
+ /*    useEffect(()=>{
+        getCategories()
+    }, [])
+
+    const getCategories = () => {
+        fetchDataFromApi("/api/categories").then(res => {
+            console.log(res)
+        })
+    } */
+
     return(
         <div>
             <Banner/>

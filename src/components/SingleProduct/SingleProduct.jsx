@@ -17,9 +17,9 @@ const SingleProduct = () => {
 
                         <div className="flex md:mt-7">
                             <div className="w-fit flex border-solid border-2 border-[#00000033] mr-2 h-12">
-                                <span className="text-lg w-10 flex items-center justify-center cursor-pointer text-[#6b6b6b] border-solid border-r border-2 border-[#00000033] ">-</span>
+                                <span className="text-lg w-10 flex items-center justify-center cursor-pointer text-[#6b6b6b] border-solid border-r border-1 border-[#00000033] ">-</span>
                                 <span className="w-14 text-lg flex items-center justify-center cursor-pointer text-[#6b6b6b]">5</span>
-                                <span className="text-lg w-10 flex items-center justify-center cursor-pointer text-[#6b6b6b] border-solid border-l border-2 border-[#00000033]">+</span>
+                                <span className="text-lg w-10 flex items-center justify-center cursor-pointer text-[#6b6b6b] border-solid border-l border-1 border-[#00000033]">+</span>
                             </div>
                             <button className="outline-none border-0 h-12 w-44 flex items-center justify-center cursor-pointer text-base text-white bg-[#8e2de2] border-b border-3 border-solid border-[#6515aa] flex-grow md:flex-grow-0">
                                 <FaCartPlus className="mr-2" size={20}/>

@@ -27,10 +27,19 @@ export default {
             transform: 'translateX(0%)',
           },
         },
+        SlideSearchWindow: {
+          '0%': {
+            transform: 'translateY(100%)',
+          },
+          '100%': {
+            transform: 'translateY(0%)',
+          },
+        },
       },
       animation: {
         stickyHeader : 'StickyHeader 0.3s ease forwards',
         slideCart: 'SlideCartWindow 0.4s ease forwards',
+        slideSearch: 'SlideSearchWindow 0.5s ease forwards',
       }
     },
   },

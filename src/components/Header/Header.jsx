@@ -8,12 +8,13 @@ import { AiOutlineHeart} from "react-icons/ai";
 
 import Search from "./Search/Search";
 import Cart from "../Cart/Cart";
-import { Context } from "../../utils/context";
+import { Context } from "../../utils/context.jsx";
 
 const Header = () => {
 
     const [scrolled, setScrolled] = useState(false);
     const [showCart, setShowCart] = useState(false);
+    const [showSearch, setShowSearch] = useState(false);
 
     const handleScroll = () => {
         const offset = window.scrollY
@@ -41,7 +42,7 @@ const Header = () => {
                     </ul>
                     <div className="text-2xl font-bold cursor-pointer uppercase md:text-4xl md:absolute md:left-1/2 md:transform md:-translate-x-1/2">Comercio</div>
                     <div className="flex item-center gap-5 md:gap-6">
-                        <TbSearch  className="text-xl cursor-pointer md:text-2xl"/>
+                        <TbSearch  className="text-xl cursor-pointer md:text-2xl" onClick={()=> setShowSearch(true)}/>
                         <AiOutlineHeart  className="text-xl cursor-pointer md:text-2xl"/>
                         <span className="relative" onClick={()=> setShowCart(true)}>
                             <CgShoppingCart  className="text-xl cursor-pointer md:text-2xl"/>
@@ -51,6 +52,7 @@ const Header = () => {
                 </div>
             </header>
             {showCart && <Cart setShowCart={setShowCart}/>}
+            {showSearch && <Search setShowSearch={setShowSearch}/>}
         </>
     );
 };
